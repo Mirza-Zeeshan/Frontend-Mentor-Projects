@@ -50,6 +50,9 @@ body {
     align-items: center;
     justify-content: space-around;
     margin: 40px 0;
+    background-color: rgba(144, 144, 235, 0.075);
+    padding: 6px;
+    border-radius: 10px;
 }
 .annualPlan {
     display: flex;
@@ -100,6 +103,14 @@ body {
 @media screen and (min-width: 750px) {
     body {
         background: url(images/pattern-background-desktop.svg) no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 749px) {
+    body {
+        background: url(images/pattern-background-mobile.svg) no-repeat;
+        background-size: contain;
         background-color: hsl(225, 100%, 94%);
     }
 }

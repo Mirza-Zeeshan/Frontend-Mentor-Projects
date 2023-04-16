@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background: linear-gradient(
+        to bottom right,
+        rgb(112, 112, 202),
+        rgb(155, 165, 197)
+    );
+    padding: 40px 20px;
+}
+body .title {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+li {
+    list-style-type: none;
+    padding: 3px;
+}
