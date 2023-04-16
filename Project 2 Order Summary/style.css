@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orderCard {
+    height: 667px;
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 88%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container .imgBox img {
+    max-width: 100%;
+}
+.orderBox {
+    padding: 0 26px;
+}
+.orderBox h1 {
+    font-weight: 900;
+    font-size: 24px;
+    color: rgb(35, 36, 49);
+    margin: 26px 0 20px 0;
+    text-align: center;
+}
+.orderBox p {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: gray;
+}
+.subPlan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.annualPlan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subPlan .annualPlan h3 {
+    font-weight: 700;
+    font-size: 15px;
+}
+.subPlan .annualPlan span {
+    color: gray;
+}
+
+.subPlan a {
+    font-weight: 900;
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+.ptmBtn {
+    background-color: rgb(70, 35, 223);
+    width: 100%;
+    padding: 16px 12px;
+    margin-bottom: 16px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgb(165, 148, 238, 0.6);
+    transition: background-color 0.5s ease;
+}
+.cancelBtn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: grey;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+.ptmBtn:hover {
+    cursor: pointer;
+
+    background-color: rgba(110, 82, 231, 0.904);
+}
+@media screen and (min-width: 750px) {
+    body {
+        background: url(images/pattern-background-desktop.svg) no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+}
