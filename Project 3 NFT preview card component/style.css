@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.masterBox {
+    max-width: 375px;
+    max-height: 667px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tokenImg img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.detailsSection {
+    margin: 20px 0;
+    text-align: left;
+}
+.detailsSection h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.detailsSection p {
+    color: hsla(215, 52%, 70%, 0.774);
+    font-size: 16px;
+    font-weight: 300;
+}
+.priceSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.priceSection .priceSec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.priceSection .priceSec img {
+    margin-right: 8px;
+}
+.priceSection .priceSec p {
+    color: hsl(178, 100%, 50%);
+}
+.priceSection .daysLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.priceSection .daysLeft img {
+    margin-right: 8px;
+}
+.priceSection .daysLeft p {
+    color: hsl(215, 51%, 70%);
+}
+.line {
+    width: 100%;
+    border: 0.1px solid hsl(215, 32%, 27%);
+    margin-bottom: 20px;
+}
+.userDeatils {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.userDeatils img {
+    margin-right: 8px;
+    border: 1px solid hsla(0, 0%, 100%, 0.781);
+    border-radius: 30px;
+}
+.userDeatils p {
+    color: hsl(215, 51%, 70%);
+}
+.userDeatils p span {
+    color: hsla(0, 0%, 100%, 0.781);
+}
+
+/* Hover Effects */
+
+.tokenImg:hover {
+    cursor: pointer;
+}
+
+.detailsSection h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.tokenImg span:hover {
+    opacity: 1;
+}
+.userDeatils p span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+/* Overlay Effect */
+.tokenImg {
+    position: relative;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tokenImg span {
+    background-color: hsla(178, 100%, 50%, 0.308);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.container span img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Shado Effect */
+.container {
+    box-shadow: 2px 12px 8px 8px hsl(217, 72%, 8%),
+        2px 6px 10px 26px hsl(215, 51%, 12%);
+}
