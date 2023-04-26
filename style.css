@@ -27,3 +27,13 @@ li {
     list-style-type: none;
     padding: 3px;
 }
+.global-back {
+    content: '<';
+    position: absolute;
+    background-color: red;
+    left: 20px;
+    top: 20px;
+}
+
+.global-back.dark {
+}

@@ -114,3 +114,11 @@ body {
         background-color: hsl(225, 100%, 94%);
     }
 }
+
+.global-back {
+    content: '<';
+    position: absolute;
+    background-color: red;
+    left: 20px;
+    top: 20px;
+}
